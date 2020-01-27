@@ -89,7 +89,7 @@ class Student
       SELECT *
       FROM students
       WHERE grade = 12
-      LIMIT amount
+      LIMIT (amount)
     SQL
  
     DB[:conn].execute(sql).map do |row|
