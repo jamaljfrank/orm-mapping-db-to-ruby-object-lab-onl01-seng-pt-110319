@@ -93,7 +93,7 @@ class Student
     SQL
  
     DB[:conn].execute(sql)
-    DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
+    DB[:conn].execute("SELECT * FROM students LIMIT #{x}")
     end
     
   end
