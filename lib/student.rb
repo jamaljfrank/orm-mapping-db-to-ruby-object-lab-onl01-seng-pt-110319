@@ -92,8 +92,8 @@ class Student
       
     SQL
  
-    DB[:conn].execute(sql, )
-    DB[:conn].execute()
+    DB[:conn].execute(sql, "SELECT * FROM students LIMIT #{x}")
+    
     
     
   end
