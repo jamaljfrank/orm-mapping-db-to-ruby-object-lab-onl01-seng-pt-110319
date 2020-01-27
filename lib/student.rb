@@ -92,7 +92,8 @@ class Student
       
     SQL
  
-    DB[:conn].execute(sql)[0..1]
+    DB[:conn].execute(sql)
+    
     
     
     
